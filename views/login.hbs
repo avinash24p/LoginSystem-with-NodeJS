@@ -1,0 +1,41 @@
+{{> header}}
+
+<body>
+
+    <form method="POST">
+        <div class="container">
+
+            <h1>
+                {{title}}
+            </h1>
+
+            {{#if message}}
+           
+                <div class="alert alert-danger" role="alert">
+                    {{message}}
+                </div>
+           
+            {{/if}}
+
+            
+
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="username" name="username" class="form-control" placeholder="Enter Username">
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" name="password" class="form-control" placeholder="Password">
+            </div>
+           
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+
+            {{> footer}}
+        </div>
+
+    </form>
+</body>
+
+</html>
